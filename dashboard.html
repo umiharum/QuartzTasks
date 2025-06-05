@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Quartz Tasks</title>
+</head>
+<body>
+    <div class="main-dashboard">
+        <div class="left-section">
+            <div class="today-date">
+                <i id="ic" class='bx bxs-heart'></i>
+                <span id="day"></span>
+                <span id="number"></span>
+                <span id="month"></span>
+                <i id="ic" class='bx bxs-heart'></i>
+            </div>
+
+            <div class="progression">
+                <h3>Progression</h3>
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea id="notes" placeholder="Write your notes here..."></textarea>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <div class="add-task">
+                <input id="input-task" type="text" size="28" placeholder="Enter your task.."></input>
+                <button id="add-task-btn">+</button>
+            </div>
+
+            <div class="task-list">
+                <p class="task0">
+                    <i class='bx bx-diamond-alt'></i> 
+                    <span id="text-task-0"></span>
+                </p>
+                <p class="task1">
+                    <i class='bx bx-diamond-alt'></i>
+                    <span id="text-task-1"></span>
+                </p>
+                <p class="task2">
+                    <i class='bx bx-diamond-alt'></i>
+                    <span id="text-task-2"></span>
+                </p>
+                <p class="task3">
+                    <i class='bx bx-diamond-alt'></i>
+                    <span id="text-task-3"></span>
+                </p>
+                <p class="task4">
+                    <i class='bx bx-diamond-alt'></i>
+                    <span id="text-task-4"></span>
+                </p>
+                <p class="task5">
+                    <i class='bx bx-diamond-alt'></i>
+                    <span id="text-task-5"></span>
+                </p>
+                <p class="task6">
+                    <i class='bx bx-diamond-alt'></i>
+                    <span id="text-task-6"></span>
+                </p>
+            </div>
+        </div>    
+    </div>
+    <div class="bottom-section">
+        <button id="finish-btn">FINISH</button>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
