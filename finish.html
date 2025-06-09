@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Chango&family=Crafty+Girls&family=Rubik+Bubbles&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="finish.css">
+    <title>Quartz Tasks</title>
+    
+</head>
+<body>
+    <div class="finishDiv">
+        <h1 id="finish-title"></h1>
+
+        <div class="diamond-img">
+            <img src="assets/happy-diamond.png" alt="Happy Diamond" id="success-task" hidden>
+            <img src="assets/sad-diamond.png" alt="Sad Diamond" id="failure-task" hidden>
+        </div>
+
+        <span id="conclusion"></span>
+
+        <button id="restart-btn">HOME</button>
+    </div>
+
+    <div class="sprakles">
+        <span style="left: 20%; animation-delay: 0s;"></span>
+        <span style="left: 50%; animation-delay: 0.3s;"></span>
+        <span style="left: 80%; animation-delay: 0.6s;"></span>
+    </div>
+    <script src="finish.js">
+        const restartBtn = document.getElementById('restart-btn');
+        restartBtn.addEventListener('click', () => {
+            window.electronAPI.loadPage('start.html');
+        });
+    </script>
+</html>
