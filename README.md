@@ -1,5 +1,8 @@
 # 📝 QuartzTasks – Electron Todo App
 
+![image-app](https://github.com/user-attachments/assets/3982fa6d-c6db-4feb-b01f-8a9169d67c63)
+
+
 A simple yet powerful desktop Todo application built with **HTML, CSS, JavaScript**, and packaged with **Electron.js** for cross-platform use.
 
 ## ✨ Features
